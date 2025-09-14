@@ -1,0 +1,106 @@
+/* Leaderboard Cartoonic Style */
+
+
+
+.LLbody {
+  background: url('../assets/images/jh.webp') no-repeat center center fixed;
+  font-family: 'Bungee', cursive;
+  justify-content: center;
+  align-items: center;
+
+  height: 100vh;
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+ 
+
+}
+
+
+
+.leaderboard-container {
+    text-align: center;
+    margin-top: 20px;
+    font-family: 'Fredoka', sans-serif;
+    background-color: #ffeb3b;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    background: url('../assets/images/forests.jpg') no-repeat center center fixed;
+    height: 10%;
+        
+  }
+  
+  .leaderboard-title {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #b8654c;
+    text-shadow: 2px 2px #000000;
+    font-family: 'Fredoka', sans-serif;
+  }
+  
+  .leaderboard-box {
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 15px;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1);
+    font-family: 'Fredoka', sans-serif;
+  }
+  
+  .leaderboard-table {
+    width: 800px;
+    border-collapse: collapse;
+    font-size: 1.3rem;
+    font-family: 'Fredoka', sans-serif;
+  }
+  
+  .leaderboard-table th {
+    background-color: #ff9800;
+    color: rgb(112, 48, 27);
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 1.6rem;
+  }
+  
+  .leaderboard-table td {
+    padding: 12px;
+    border-bottom: 2px solid #ffc107;
+    font-weight: bold;
+  }
+  
+  .leaderboard-row:nth-child(even) {
+    background-color: #ffecb3;
+  }
+  
+  .leaderboard-row:nth-child(odd) {
+    background-color: #fff8e1;
+  }
+  
+  .leaderboard-row td:first-child {
+    font-size: 22px;
+    font-weight: bold;
+  }
+  
+  .back-button {
+    margin-top: 15px;
+    padding: 10px 20px;
+    font-size: 18px;
+    border: none;
+    border-radius: 10px;
+    background-color: #ff5722;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+    text-shadow: 1px 1px 2px black;
+  }
+  
+  .back-button:hover {
+    background-color: #e64a19;
+    transform: scale(1.1);
+  }
+  

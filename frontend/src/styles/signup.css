@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;700&display=swap');
+
+.Sbody {
+  margin: 0;
+  padding: 0;
+  background: url('../assets/images/more.webp') no-repeat center center fixed;
+  background-size: cover;
+  font-family: 'Bungee', sans-serif;
+  color: #333;
+}
+
+.overlayS {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Darker overlay */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+  }
+
+.SignContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    position: relative;
+    text-align: center;
+  }
+  
+
+.signup-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  
+}
+
+.signup-box {
+  background-color: rgba(230, 216, 124, 0.9);
+  padding: 20px 40px;
+  border-radius: 20px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+  text-align: center;
+  width: 300px;
+  position: relative;
+  border: 10px solid #ffffff; /* Yellow border */
+}
+
+.signup-title {
+  font-size: 2.3rem;
+  color: #0a2410;
+  text-shadow: 1px 1px 1px #fff;
+  margin-bottom: 20px;
+}
+
+.signup-input {
+  width: 90%;
+  padding: 12px;
+  margin: 10px 0;
+  border: none;
+  border-radius: 20px;
+  background-color: #e0e0e0;
+  box-shadow: inset 2px 2px 4px rgba(0, 0, 0, 0.2);
+  outline: none;
+  font-family: 'Fredoka', sans-serif;
+  font-size: 1rem;
+  text-align: center;
+}
+
+.signup-input::placeholder {
+  color: #666;
+  font-weight: bold;
+  font-family: 'Fredoka', sans-serif;
+  font-size: 1rem;
+}
+
+.signup-button {
+  background: linear-gradient(to bottom, #ffcc00, #ff9900);
+  border: none;
+  padding: 12px 30px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #333;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  margin-top: 10px;
+  font-family: 'Fredoka', sans-serif;
+}
+
+.signup-button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.6);
+}
+
+.signup-button:active {
+  transform: scale(0.95);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.login-redirect {
+  margin-top: 20px;
+  color: #333;
+  font-size: 0.9rem;
+  font-family: 'Fredoka', sans-serif;
+  border: none;
+}
+
+.login-link {
+  color: #6ea5df;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.login-link:hover {
+  color: #0056b3;
+}

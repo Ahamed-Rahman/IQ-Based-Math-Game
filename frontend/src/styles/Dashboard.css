@@ -1,0 +1,360 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;700&display=swap');
+
+.Dbody {
+    margin: 0;
+    padding: 0;
+    background: url('../assets/images/jh.webp') no-repeat center center fixed;
+    background-size: cover;
+    font-family: 'Bungee', sans-serif;
+    color: #333;
+  }
+  
+  .overlayD {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.5); /* Darker overlay */
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+    }
+
+
+.dashboard-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+/* CSS Code for 3D Profile Icon with Yellow Background */
+/* CSS Code for Beautiful Cartoonic 3D Profile Icon with Orange and Yellow Mix */
+.profile-icon {
+    position: absolute;
+    top: 15px;
+    right: 50px;
+    width: 50px;
+    height: 50px;
+    background: linear-gradient(135deg, #ffa500, #ff5e00);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    border: 2px solid #fff;
+    overflow: hidden;
+    cursor: pointer;
+   
+  }
+  
+  .profile-icon:hover {
+    transform: translateY(-5px) scale(1.05);
+    box-shadow: 0px 12px 20px rgba(0, 0, 0, 0.5);
+  }
+  
+  .profile-icon::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.4) 10%, transparent 50%);
+    border-radius: 50%;
+    opacity: 0.3;
+  }
+
+  
+  .un {
+    font-size: 15px;
+    font-weight: bold;
+    color: #fff;
+    position: absolute;
+    top: 80px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+    letter-spacing: 1px;
+    animation: bounce 1s infinite alternate;
+    margin-left: 1420px;
+
+  }
+  
+  @keyframes bounce {
+    from {
+      transform: translateY(0);
+    }
+    to {
+      transform: translateY(-3px);
+    }
+  }
+  
+
+
+h2{
+  font-size: 2.6rem;
+  color: #ffffff;
+  text-shadow: 1px 1px 1px #000000;
+  margin: 10px 0;
+  font-family: 'Fredoka', sans-serif;
+
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+
+  margin-top: 20px;
+}
+
+.buttonss {
+    background: url('../assets/images/wooden.png') no-repeat center center;
+    background-size: cover; /* Ensures the image fully covers the button */
+    border: none;
+    padding: 30px 50px;
+    cursor: pointer;
+    font-size: 2.1rem;
+    font-weight: 800;
+    color: #0a2410;
+    text-shadow: 1px 1px 2px #fff;
+    transition: transform 0.2s, box-shadow 0.2s;
+    
+    border-radius: 10px;
+    width: 400px; /* Adjust width for better appearance */
+    height: 100px;  /* Fixed height to maintain button size */
+    margin: 10px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Fredoka', sans-serif;
+
+  }
+
+  .selected-level {
+    border: 3px solid rgb(104, 61, 32); /* Dark border */
+    border-radius: 5px;
+    padding: 10px 50px;
+    display: inline-block;
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+  
+
+.buttonss:hover {
+  transform: scale(1.05);
+
+}
+
+.buttonss:active {
+  transform: scale(0.95);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+/* Levels Section Styling */
+/* Levels Section Styling */
+.levels {
+    background: url('../assets/images/boardss.png') no-repeat center center;
+    background-size: cover;
+    padding: 150px 300px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    width: 350px;
+    height: 300px;
+    display: none; /* Initially hidden */
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1000;
+    transition: all 0.3s ease-in-out;
+}
+
+/* ✅ Blur effect when settings form is open */
+.blur-background {
+  filter: blur(5px);
+  pointer-events: none;
+}
+
+/* ✅ Settings Form Overlay */
+.settings-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6); /* Semi-transparent background */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+/* ✅ Centered Settings Box */
+.settings-container {
+  background: white;
+  padding: 20px;
+  border-radius: 15px;
+  text-align: center;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  position: relative;
+}
+
+/* ✅ Close Button */
+.close-settings {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+/* ✅ Music Toggle Section */
+.music-toggle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.toggle-button {
+  background: #28a745;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+.toggle-button:hover {
+  background: #218838;
+}
+
+.headd {
+    font-size: 1.6rem;
+    color: #333;
+    text-shadow: 1px #000000;
+    margin: 10px 0;
+    margin-left: 60px;
+    margin-top: 40px;
+    width: 300px;
+    font-family: 'Fredoka', sans-serif;
+
+}
+
+.levels.active {
+    display: flex; /* Display the form when active */
+}
+
+.levels label {
+    display: block;
+    margin: 10px 0;
+    font-size: 1.2rem;
+    color: #0a2410;
+    font-weight: bold;
+    background: url('../assets/images/wooden.png') no-repeat center center;
+    background-size: cover;
+    padding: 17px 40px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
+    width: 200px;
+    text-align: center;
+    margin-left: 60px;
+    font-family: 'Bungee', sans-serif;
+}
+
+.levels label:hover {
+    transform: scale(1.05);
+}
+
+.levels input[type="radio"] {
+    display: none; /* Hide the radio button */
+}
+
+.levels input[type="radio"]:checked + label {
+    transform: scale(1.1);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.6);
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.btn {
+    background: none;
+    border: none;
+    padding: 10px 30px;
+    font-size: 1.2rem;
+    color: #0a2410;
+    font-weight: bold;
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
+    font-family: 'Fredoka', sans-serif;
+    border-radius: 8px;
+    margin-top: 15px;
+    margin-left: 80px;
+}
+
+.levels button{
+    background: linear-gradient(to bottom, #ffcc00, #ff9900);
+    padding: 10px;
+    width: 300px;
+    border-radius: 20px;
+    border: none;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.6);
+    margin-bottom: 10px;
+    font-family: 'Fredoka', sans-serif;
+    font-size: 1.5rem;
+    margin-left: -15px;
+    font-weight: bold;
+    text-shadow: #fff;
+    color: #333;
+}
+
+
+.levels button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.6);
+}
+
+.levels button:active {
+    transform: scale(0.95);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+/* Overlay for Background Blur */
+.overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 999;
+}
+
+.overlay.active {
+    display: block;
+}
+
+/* Close Button */
+.close-icon {
+    position: absolute;
+    top: 100px;
+    right: 60px;
+    font-size: 26px;
+    font-weight: bolder;
+    color: #ff4d4d;
+    cursor: pointer;
+    transition: transform 0.2s, color 0.3s ease;
+}
+
+.close-icon:hover {
+    transform: scale(1.2);
+    color: #cc0000;
+}
